@@ -1,0 +1,83 @@
+//vars
+$content-width: 1220px;
+$content-width--small: 940px;
+$content-gutters: 25px;
+
+.siteSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.siteSection--blue {
+    background: $blue;
+    color: $white;
+}
+.siteSection--white {
+    background: url('../images/bg-1.png') left 30px no-repeat;
+}
+.siteSection--contact {
+    background: url('../images/bg-1.png') $blue right bottom no-repeat;
+}
+.siteSection--noPad {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+//in case we have sidebar
+$sidebar-width: 300px;
+.row.has-sidebar {
+    @include breakpoint(large) {
+        padding-right: $sidebar-width;
+    }
+    .siteContent-body {
+        @include breakpoint(large) {
+            padding-right: $content-gutters*2;
+        }
+    }
+}
+.siteContent-body {
+    @include breakpoint(large) {
+        float: left;
+        width: 100%;
+        padding-right: 0;
+    }
+}
+.siteContent-side {
+    position: relative;
+    @include breakpoint(large) {
+        float: left;
+        width: $sidebar-width;
+        margin-left: -$sidebar-width;
+        left: $sidebar-width;
+    }
+}
+
+.sitePopUp {
+    width: 660px;
+    padding: 60px;
+    background: $white;
+    margin: 0 auto;
+    input,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+        width: 100%;
+        padding: 5px 10px 5px;
+        font-family: $font-second;
+        font-size: 22px;
+        line-height: $lineHeight-base;
+        border: 1px solid $gray;
+        border-radius: 24px;
+        color: $gray;
+        -webkit-appearance: none;
+        text-align: center;
+        background: none;
+        &:focus {
+        }
+        &::placeholder {
+            color: $gray;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.info {
+	text-align: center;
+	border-right: dashed 1px $white;
+	padding: 30px 15px;
+}
+.info__img {
+	background: url('../images/sprite.png');
+	display: inline-block;
+	min-height: 130px;
+	margin-bottom: 30px;
+	&.info__img_first {
+		width: 116px; 
+		height: 119px;
+    	background-position: -141px -5px;
+	}
+	&.info__img_second {
+		width: 126px; 
+		height: 130px;
+   		background-position: -5px -5px;
+	}
+	&.info__img_third {
+		width: 117px; 
+		height: 117px;
+    	background-position: -267px -5px;
+	}
+}
+.info__title {
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+.info__text {
+	font-size: 14px;
+	text-align: left;
+}

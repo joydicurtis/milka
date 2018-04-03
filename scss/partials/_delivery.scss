@@ -1,0 +1,43 @@
+.delivery {
+	border: solid 1px $gray;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.delivery-container {
+	border-radius: 20px;
+	box-shadow: 0px 3px 27px 0 rgba(0, 0, 0, 0.08);
+	padding: 40px;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 30px;
+		li {
+			color: $blue;
+			font-weight: $fontWeight-normal;
+			margin-bottom: 10px;
+			&:before {
+				content: '✔';
+				margin-right: 15px;
+				font-size: 22px;
+			}
+		}
+	}
+}
+.delivery__img {
+	margin-bottom: 15px;
+}
+.delivery__title {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-weight: $fontWeight-bold;
+	font-size: 16px;
+	text-align: center;
+}
+.delivery__text {
+	font-size: 16px;
+	text-align: center;
+}
+.delivery__map {
+	margin-bottom: 120px;
+}
